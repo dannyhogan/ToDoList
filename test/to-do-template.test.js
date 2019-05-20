@@ -1,3 +1,4 @@
+import toDoTemplate from '../src/index/to-do-template.js';
 const test = QUnit.test;
 
 test('creates unchecked box if not completed', function(assert) {
@@ -41,18 +42,3 @@ test('creates checked box if not completed', function(assert) {
     //Assert
     assert.equal(html, expected);
 });
-
-function toDoTemplate(todo) {
-    let checked = '';
-
-    if(todo.completed) {
-        checked = 'checked';
-    }
-
-    return /*html*/`
-        <li>
-            <h3>${todo.task}</h3> 
-            <input type="checkbox" ${checked}>
-        </li>
-    `;
-}
