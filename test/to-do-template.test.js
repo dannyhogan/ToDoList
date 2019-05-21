@@ -1,6 +1,8 @@
 import toDoTemplate from '../src/index/to-do-template.js';
 const test = QUnit.test;
 
+QUnit.module('creates check boxes');
+
 test('creates unchecked box if not completed', function(assert) {
     //Arrange
     const todo = {
