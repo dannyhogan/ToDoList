@@ -5,7 +5,7 @@ import toDoTemplate from './to-do-template.js';
 import headerTemplate from './header-template.js';
 
 //import HTML to DOM function
-import htmlToDOM from './html-to-dom.js';
+import htmlToDOM from './html-to-DOM.js';
 
 // reference parents
 const list = document.getElementById('list');
