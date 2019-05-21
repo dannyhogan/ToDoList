@@ -7,8 +7,9 @@ function toDoTemplate(todo) {
 
     return /*html*/`
         <li>
-            <h3>${todo.task}</h3> 
-            <input type="checkbox" ${checked}>
+            <label>${todo.task}
+                <input type="checkbox" ${checked}>
+            </label>
         </li>
     `;
 }
