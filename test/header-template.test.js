@@ -1,4 +1,7 @@
+import headerTemplate from '../src/index/header-template.js'
 const test = QUnit.test;
+
+QUnit.module('creates header html from template');
 
 test('creates header html', function(assert) {
     //Arrange
@@ -14,11 +17,3 @@ test('creates header html', function(assert) {
     //Assert
     assert.htmlEqual(html, expected);
 });
-
-function headerTemplate() {
-    return /*html*/`
-        <header>
-            <h1>Alchemy To Do List!</h1>
-        </header>
-    `;
-}
