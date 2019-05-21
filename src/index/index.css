@@ -3,13 +3,25 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(66, 66, 66);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: gray;
+    width: 100vw;
+}
+
+h1 {
+    color: white;
 }
 
 #list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0;
+    margin-top: 20px;
+    padding: 0;
 }
 
 #list li {
@@ -17,12 +29,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     list-style: none;
-    border: 1px solid white;
+    border: 2px solid rgb(136, 136, 136);
     border-radius: 10px;
-    width: 50vw;
-    background-color: rgb(100, 100, 100);
+    width: 25vw;
+    background-color: rgb(26, 26, 26);
     color: white;
 }
