@@ -1,4 +1,4 @@
-import headerTemplate from '../src/index/header-template.js'
+import headerTemplate from '../src/index/header-template.js';
 const test = QUnit.test;
 
 QUnit.module('creates header html from template');
