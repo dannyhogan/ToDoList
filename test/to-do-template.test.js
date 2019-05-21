@@ -10,16 +10,17 @@ test('creates unchecked box if not completed', function(assert) {
 
     const expected = /*html*/`
         <li>
-            <h3>Learn HTML</h3> 
-            <input type="checkbox" checked>
+            <label>${todo.task}
+                <input type="checkbox" checked>
+            </label>
         </li>
-    `;
+`;
 
     //Act 
     const html = toDoTemplate(todo);
 
     //Assert
-    assert.equal(html, expected);
+    assert.htmlEqual(html, expected);
 });
 
 test('creates checked box if not completed', function(assert) {
@@ -31,8 +32,9 @@ test('creates checked box if not completed', function(assert) {
 
     const expected = /*html*/`
         <li>
-            <h3>Learn HTML</h3> 
-            <input type="checkbox" >
+            <label>${todo.task}
+                <input type="checkbox" >
+            </label>
         </li>
     `;
 
@@ -40,5 +42,5 @@ test('creates checked box if not completed', function(assert) {
     const html = toDoTemplate(todo);
 
     //Assert
-    assert.equal(html, expected);
+    assert.htmlEqual(html, expected);
 });
